@@ -1,0 +1,80 @@
+.heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(253, 253, 253);
+
+}
+.heading:hover{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(253, 253, 253);
+
+}
+
+.links{
+    font-size: 20px;
+}
+#BUNN:hover{
+   /* background-color: rgb(255, 196, 0); */
+   width: 120px;
+   height: 50px;
+   font-weight: bolder;
+   color: darkorange;
+
+}
+.calcu{
+    font-family: mooli;
+    font-size: xx-large;
+    font-weight: 800;
+    color: rgb(145, 217, 147)5, 145, 217;
+
+}
+.savimg{
+    width: 450px;
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 10%;
+}
+.savimg1{
+    width: 450px;
+    height: 400px;
+    border-radius: 10%;
+    margin-left: 70px;
+
+
+}
+.reg{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.log{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.bord1{
+    background-color:rgb(0, 0, 0);
+}
+.bord2{
+    background-color:rgb(0, 0, 0);
+}
+
+@media screen and (max-width:600px){
+ .calcu{
+    font-family: mooli;
+    font-size: large;
+    font-weight: 800;
+    color: blue;
+  }
+  .bord1,.bord2{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+}

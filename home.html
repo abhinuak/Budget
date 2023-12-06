@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Changa:wght@200&family=Croissant+One&family=Kaushan+Script&family=Luckiest+Guy&family=Mooli&family=Philosopher:ital@1&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body style="background-image: url(https://static.vecteezy.com/system/resources/previews/010/009/925/original/financial-management-concept-and-investment-flat-design-of-payment-with-money-cash-banknote-calculator-and-credit-card-illustration-and-banner-template-free-vector.jpg); background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-dark w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand heading text-light" href="#"><i class="fa-solid fa-money-bill-1" style="color: #ffffff;"></i> BUDGET CALCULATOR</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <button id="out" class="btn btn-danger butn me-3" onclick="logout()">Logout</button>
+
+        </div>
+      </nav>
+   
+
+    <div class="row w-100">
+        
+        <div class="col-lg-11 col-sm-10 col-xs-10  border1 mt-4 ms-lg-5 ">
+            <div class="row">
+
+                <div class="col-6 border2">
+                    <h2 class="head3 mt-5">BUDGET</h2>
+                    <div><input type="text" class="form-control w-100 border-success mt-2" id="budget" placeholder="Enter Budget" ></div>
+                    <div class="row mt-2">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <button onclick="enterBudget()" class="w-100 btn btn-danger butn">SET</button>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-1"></div>
+                        <div class="col-10 bord mt-1">
+                             <h6 class="budget">BUDGET</h6>
+                             <div class="row w-100">
+                                 <div class="col-3"></div>
+                                 <div class="col-6" id="inner1"></div>
+                                 <div class="col-3"></div>
+                             </div>
+                             <div class="row w-100">
+                                 <div class="col-lg-5 col-sm-5 col-xs-5" >
+                                    <h6 class="budget mt-4">TOTAL EXPENSE</h6>
+                                    <div class="row w-100">
+                                        <div class="col-1"></div>
+                                        <div class="col-10 " id="inner2"></div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                 </div>
+                                 <div class="col-1"></div>
+                                 <div class="col-lg-6 col-sm-5 col-xs-5" >
+                                    <h6 class="budget mt-4">CASH BALANCE</h6>
+                                    <div class="row w-100">
+                                        <div class="col-1"></div>
+                                        <div class="col-10 " id="inner3"></div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                 </div>
+                             </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="row w-100">
+                        <div class="col-10 w-100">
+                            
+                            <h2 class="head2 mt-5">EXPENSES</h2>
+                            <input type="date" id="date" class="tex form-control border-1 border-primary w-100 mt-2">
+                            <input type="text " id="event" placeholder="Description" class="tex form-control border-1 border-primary w-100 mt-4">
+                            <input type="text " id="amount" placeholder="Money Spent" class="tex form-control border-1 border-primary w-100 mt-4">
+                            <div class="row mt-4">
+                                <div class="col-4"></div>
+                                <div class="col-4">
+                                    <button class="btn btn-danger w-100 mb-4 butn" onclick="enterData()" id="buttn">ADD</button>
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+               
+               
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row w-100 mt-4">
+        <div class="col-1"></div>
+        <div class="col-10 " id="dvContents">
+            <h1 class="this ">Monthly Budget</h1>
+            <table class="tab table table-striped table-warning" id="table_style">
+                <thead>
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Spent For</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="1"></td>
+                        <th colspan="1" id="tot">Total Amount : </th>
+                        <td colspan="1">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</body>
+<script src="./script.js">
+
+</script>
+</html>

@@ -1,0 +1,126 @@
+.navbar{
+    top: 0px;
+    position: sticky;
+}
+.heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 170, 0);
+
+}
+.heading:hover{
+    color: white;
+}
+.links{
+    font-size: 20px;
+}
+#out:hover{
+    width: 120px;
+    height: 50px;
+}
+.calcu{
+    font-family: mooli;
+    font-size: xx-large;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+
+}
+.butn{
+    font-weight: 600;
+    font-family: mooli;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+
+}
+.border1{
+  
+    background-color: rgb(255, 170, 0);
+    border-radius: 10px;
+    /* box-shadow:1px 1px 1px rgb(0, 0, 0); */
+}
+.border2{
+       
+    background-color: rgb(255, 170, 0);
+    border-radius: 10px;
+    /* box-shadow:1px 1px 1px 2px black; */
+    padding-bottom: 20px;
+    width: 50%;
+}
+.tex{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.head2{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.head3{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+
+    
+}
+.savimg{
+    width: 250px;
+    height: 250px;
+
+}
+.this{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 2px rgb(255, 225, 76);
+}
+
+.budget{
+    text-align: center;
+    margin-top: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: rgb(11, 8, 8);
+
+}
+.bord{
+    background-color: rgb(255, 206, 107);
+    height: 220px;
+    border-radius: 20px;
+}
+.bud{
+    color: rgb(0, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.budg{
+    color: rgb(5, 4, 4);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#inner1,#inner2,#inner3{
+    text-align: center;
+}
+.bu{
+    color: rgb(0, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:30px;
+}
+#table_style{
+    font-family: Mooli;
+    background-color: black;
+}
+#tot{
+    font-weight: bolder;
+}
+ @media screen and (max-width:600px){
+    .butn{
+        margin-left: 80%;
+    
+    }
+    .border1{
+        margin-left: 3%;
+    }
+ }
